@@ -1,0 +1,31 @@
+<style>
+    body {
+        background-color: black;
+        color: green;
+        font-family: monospace;
+    }
+
+    /* id are more prioritize than classes */
+    #orange-text {
+        color: orange;
+    }
+
+    /* here the order matter either pink declare last or blue declare last */
+    /* think it like blue override the pink color attribute to blue */
+    /* important is more prioritize than inline style */
+    .pink-text {
+        color: pink !important;
+    }
+
+    .blue-text {
+        color: blue;
+    }
+</style>
+
+<!-- inline styles are more prioritize than classes or attibutes -->
+
+<!-- inline style > id > classes -->
+<!-- important > inline style > id > classes -->
+<h1 class="pink-text blue-text" id="orange-text" style="color:white;">
+    Hello world
+</h1>

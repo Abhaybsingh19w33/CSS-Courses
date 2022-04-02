@@ -1,0 +1,44 @@
+<style>
+  .d1 {
+    background: LightSkyBlue;
+  }
+
+  .d2 {
+    background: LightSalmon;
+  }
+
+  .d3 {
+    background: PaleTurquoise;
+  }
+
+  .d4 {
+    background: LightPink;
+  }
+
+  .d5 {
+    background: PaleGreen;
+  }
+
+  .container {
+    font-size: 40px;
+    width: 100%;
+    background: LightGray;
+    display: grid;
+    /* add your code below this line */
+    /* fr last section is divided in total number of fr */
+    /* here they are divide in 3 section and 2fr are allocated to 4th column and 1fr are allocated to 5th column */
+    /* grid-template-columns: auto 50px 10% 2fr 1fr; */
+    grid-template-columns: 1fr 100px 1fr;
+    
+    /* add your code above this line */
+    grid-template-rows: 50px 50px
+  }
+</style>
+
+<div class="container">
+  <div class="d1">1</div>
+  <div class="d2">2</div>
+  <div class="d3">3</div>
+  <div class="d4">4</div>
+  <div class="d5">5</div>
+</div>
